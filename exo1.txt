@@ -1,0 +1,37 @@
+correction exo 1/
+3-4- SELECT name, height
+FROM pokemon
+ORDER BY height DESC
+
+5- SELECT name, spd
+FROM pokemon
+ORDER BY spd DESC
+LIMIT 1;
+
+6- SELECT name, atk 
+FROM pokemon
+WHERE atk>150 
+
+7-SELECT name, (hp + atk + def + spa + spd + spe) AS somme 
+FROM pokemon
+LIMIT 1;
+
+8-SELECT name, slug, name_api FROM pokemon WHERE slug = name_api;
+
+9-SELECT AVG(atk) 
+FROM pokemon;  
+
+SELECT name, atk FROM pokemon where atk > 80;
+
+10-SELECT name FROM `pokemon` WHERE name LIKE '%Mew%';
+
+11-SELECT name FROM pokemon WHERE LENGTH(name) <= 3;
+
+12-SELECT name FROM pokemon ORDER BY length(name) DESC LIMIT 1;
+
+13-SELECT name, (hp + atk + def + spa + spd + spe) AS somme FROM pokemon ORDER BY somme LIMIT 1;
+
+14- SELECT name, base_experience FROM pokemon ORDER by base_experience LIMIT 1;
+
+15- SELECT *, CONCAT ( ROUND (( base_experience / ( hp + atk + def + spa + spd + spe )) 100, 2), '%') AS efficace FROM pokemon ORDER BY ROUND(( base_experience / (hp + atk + def + spa + spd + spe )) * 100, 2);
+

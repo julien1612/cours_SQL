@@ -1,0 +1,7 @@
+1- SELECT last_name, first_name FROM students;
+
+2-SELECT * FROM `students` WHERE sex = 'M' AND height < 160 OR sex = 'F' AND height > 160;
+
+3- SELECT height FROM students ORDER by height LIMIT 1;
+
+4- SELECT AVG(height) AS moyenne FROM `students` WHERE sex = 'M';
