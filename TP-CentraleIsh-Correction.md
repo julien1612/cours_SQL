@@ -1,4 +1,5 @@
 
+
 Explication de la base :
 - address : une adresse, si un "user_uuid" est renseigné, alors cette adresse est celle d'un utilisateur (en plus de potentiellement être celle d'une vente)
 - brand : les marques de voiture

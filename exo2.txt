@@ -5,3 +5,21 @@
 3- SELECT height FROM students ORDER by height LIMIT 1;
 
 4- SELECT AVG(height) AS moyenne FROM `students` WHERE sex = 'M';
+
+5- SELECT sex, COUNT(*) AS number_of_students FROM students GROUP by sex;
+
+6- SELECT sex, COUNT(*) AS nombres FROM students WHERE ( sex = 'M' AND height > 160) OR ( sex = 'F' AND height < 160) GROUP BY sex;
+
+7- SELECT DISTINCT height FROM students ORDER BY height;
+
+8- SELECT * FROM students WHERE height BETWEEN '170' AND '190' ORDER by height;
+
+9- SELECT * FROM students WHERE height IN ('160', '170', '180', '190');
+
+-----------
+
+1- INSERT INTO students (last_name, first_name ,height ,sex ) VALUES ('Parker', 'Antony', '199', 'M');
+
+2- SELECT height, CONCAT(height / 100.0, 'm') AS taille_m FROM students;
+
+3- UPDATE students SET height = '189' WHERE last_name = 'Parker';
