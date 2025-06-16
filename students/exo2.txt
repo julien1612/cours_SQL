@@ -23,3 +23,7 @@
 2- SELECT height, CONCAT(height / 100.0, 'm') AS taille_m FROM students;
 
 3- UPDATE students SET height = '189' WHERE last_name = 'Parker';
+
+4- DELETE FROM students WHERE first_name = 'Maxime';
+
+5- 
